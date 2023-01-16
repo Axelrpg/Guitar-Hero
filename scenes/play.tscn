@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/buttons/button_3.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/buttons/button_4.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/buttons/button_2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/buttons/button_1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/points/point generator.tscn" type="PackedScene" id=5]
+[ext_resource path="res://music/Through The Fire And Flames.mp3" type="AudioStream" id=6]
+[ext_resource path="res://scenes/gui/GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/points/point optimizer.tscn" type="PackedScene" id=8]
+
+[node name="play" type="Node2D"]
+
+[node name="button_1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 64, 576 )
+
+[node name="button_2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 128, 576 )
+
+[node name="button_3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192, 576 )
+
+[node name="button_4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 256, 576 )
+
+[node name="point generator" parent="." instance=ExtResource( 5 )]
+
+[node name="point optimizer" parent="." instance=ExtResource( 8 )]
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 160, 320 )
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="GUI" parent="." instance=ExtResource( 7 )]

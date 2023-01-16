@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Through The Fire And Flames.mp3-50814c53d4d0237afad59f11d79bf630.mp3str"
+
+[deps]
+
+source_file="res://music/Through The Fire And Flames.mp3"
+dest_files=[ "res://.import/Through The Fire And Flames.mp3-50814c53d4d0237afad59f11d79bf630.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
