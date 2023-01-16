@@ -35,7 +35,7 @@ func _on_spawn_timeout():
 # Funcion que se ejecuta cuando el tiempo de espera de spawn de puntos se acaba
 func _on_spawn_speed_timeout():
 	# Reducir el tiempo de espera de spawn de puntos
-	if spawn_wait_time > 0.1:
+	if spawn_wait_time > 0.4:
 		spawn_wait_time -= 0.1
 		$spawn.wait_time = spawn_wait_time
 	print(spawn_wait_time)

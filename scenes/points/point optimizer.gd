@@ -4,7 +4,12 @@ extends Area2D
 func _on_point_optimizer_area_entered(area):
 	# Verificar si el objeto entrante pertenece al grupo "points"
 	if area.is_in_group("points"):
-		# Reducir la cantidad de vidas en 1
-		GLOBAL.LIVES -= 1
+		if GLOBAL.LIVES > 0:
+			# Reducir la cantidad de vidas en 1
+			GLOBAL.LIVES -= 1
+		else:
+			get_tree().change_scene("res://scenes/gui/failed song.tscn")
+		# Reproducir el sonido
+		$error.play()
 		# Eliminar el objeto entrante
 		area.queue_free()

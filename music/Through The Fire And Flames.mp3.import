@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Through The Fire And Flames.mp3-50814c53d4d0237afad5
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

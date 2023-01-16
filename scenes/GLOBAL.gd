@@ -4,7 +4,7 @@ extends Node
 var VELOCITY = 3
 
 # Variables para almacenar el número de vidas y puntos del jugador
-var LIVES = 10
+var LIVES = 9
 var POINTS = 0
 
 # Variable para almacenar el generador de números aleatorios
