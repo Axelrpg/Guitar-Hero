@@ -7,6 +7,9 @@ var VELOCITY = 3
 var LIVES = 9
 var POINTS = 0
 
+# Variable para almacenar la ruta de la cancion seleccionada
+var SONG
+
 # Variable para almacenar el generador de números aleatorios
 onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 

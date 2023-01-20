@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Theme From Spiderman.mp3-8463c52999177aa30ab7b3fdc947f1a9.mp3str"
+
+[deps]
+
+source_file="res://music/Theme From Spiderman.mp3"
+dest_files=[ "res://.import/Theme From Spiderman.mp3-8463c52999177aa30ab7b3fdc947f1a9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

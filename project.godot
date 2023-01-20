@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Guitar Hero"
-run/main_scene="res://scenes/play.tscn"
+run/main_scene="res://scenes/GUI/songs_list.tscn"
 config/icon="res://icon.png"
 
 [autoload]

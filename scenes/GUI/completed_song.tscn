@@ -1,48 +1,47 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://fonts/GUI.tres" type="DynamicFont" id=1]
-[ext_resource path="res://scenes/gui/failed song.gd" type="Script" id=2]
-[ext_resource path="res://music/Booooo.mp3" type="AudioStream" id=3]
+[ext_resource path="res://music/Claps.mp3" type="AudioStream" id=2]
+[ext_resource path="res://scenes/GUI/completed_song.gd" type="Script" id=3]
 
-[node name="failed song" type="Control"]
+[node name="completed_song" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -106.5
+margin_left = -113.5
 margin_top = -76.5
-margin_right = 106.5
+margin_right = 113.5
 margin_bottom = 76.5
 custom_constants/separation = 15
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 213.0
+margin_right = 227.0
 margin_bottom = 24.0
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
-margin_left = 26.0
-margin_right = 186.0
+margin_right = 227.0
 margin_bottom = 24.0
 custom_fonts/font = ExtResource( 1 )
-text = "Cancion fallida"
+text = "Cancion completada"
 align = 1
 valign = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 39.0
-margin_right = 213.0
+margin_right = 227.0
 margin_bottom = 63.0
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
-margin_left = 54.0
-margin_right = 137.0
+margin_left = 61.0
+margin_right = 144.0
 margin_bottom = 24.0
 custom_fonts/font = ExtResource( 1 )
 text = "Puntos: "
@@ -50,8 +49,8 @@ align = 1
 valign = 1
 
 [node name="points" type="Label" parent="VBoxContainer/HBoxContainer2"]
-margin_left = 141.0
-margin_right = 158.0
+margin_left = 148.0
+margin_right = 165.0
 margin_bottom = 24.0
 custom_fonts/font = ExtResource( 1 )
 text = "0"
@@ -60,22 +59,23 @@ valign = 1
 
 [node name="retry" type="Button" parent="VBoxContainer"]
 margin_top = 78.0
-margin_right = 213.0
+margin_right = 227.0
 margin_bottom = 108.0
 custom_fonts/font = ExtResource( 1 )
 text = "Reintentar"
 icon_align = 1
 
-[node name="songs list" type="Button" parent="VBoxContainer"]
+[node name="songs_list" type="Button" parent="VBoxContainer"]
 margin_top = 123.0
-margin_right = 213.0
+margin_right = 227.0
 margin_bottom = 153.0
 custom_fonts/font = ExtResource( 1 )
 text = "Lista de canciones"
 icon_align = 1
 
-[node name="boooooo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
+[node name="claps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/songs_list" to="." method="_on_songs_list_pressed"]

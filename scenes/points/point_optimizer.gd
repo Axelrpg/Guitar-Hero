@@ -8,7 +8,7 @@ func _on_point_optimizer_area_entered(area):
 			# Reducir la cantidad de vidas en 1
 			GLOBAL.LIVES -= 1
 		else:
-			get_tree().change_scene("res://scenes/gui/failed song.tscn")
+			get_tree().change_scene("res://scenes/GUI/failed_song.tscn")
 		# Reproducir el sonido
 		$error.play()
 		# Eliminar el objeto entrante
