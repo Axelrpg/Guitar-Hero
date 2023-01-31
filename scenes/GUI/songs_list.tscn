@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/GUI/buttongroup_songs.tres" type="ButtonGroup" id=2]
 [ext_resource path="res://scenes/GUI/songs_list.gd" type="Script" id=3]
 
-[node name="song_menu" type="Control"]
+[node name="songs_list" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )

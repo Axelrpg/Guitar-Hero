@@ -21,3 +21,7 @@ func random(min_number, max_number):
 	var random : int = rng.randf_range(min_number, max_number)
 	# Devolver el número aleatorio
 	return random
+	
+func _physics_process(delta):
+	if Input.is_action_just_pressed("reload"):
+		get_tree().change_scene("res://scenes/GUI/songs_list.tscn")

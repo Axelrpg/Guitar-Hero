@@ -1,5 +1,7 @@
 extends Control
 
+var file = File.new()
+
 # Referencia a los botones de selección de canción
 onready var checkbuttons = [
 	$VBoxContainer/song1/CheckButton,
